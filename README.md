@@ -1,10 +1,5 @@
 # dsa
 
-Improving my Problem-Solving Skills through solving DSA questions.
+Improving my Problem-Solving skills through solving DSA questions.
 
 ## Arrays
-
-1-max-min-in-an-array
-2-reverse-array
-4-contains-duplicate
-8-best-time-buy-sell
