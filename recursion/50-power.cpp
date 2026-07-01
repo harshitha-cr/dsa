@@ -9,26 +9,21 @@ n - integers
 // #include <cmath>
 using namespace std;
 
-double myPow(double x, int n)
-{
+double myPow(double x, int n) {
   if (n == 1)
     return x;
   if (n == 0)
     return 1;
 
   double temp = myPow(x, n / 2);
-  if (n % 2 == 1)
-  {
+  if (n % 2 == 1) {
     return temp * temp * x;
-  }
-  else
-  {
+  } else {
     return temp * temp;
   }
 }
 
-int main()
-{
+int main() {
   double x;
   cin >> x;
   int n;

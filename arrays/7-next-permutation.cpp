@@ -4,13 +4,12 @@
  * The replacement must be in place and use only constant extra memory.
  */
 
+#include <algorithm>
 #include <iostream>
 #include <vector>
-#include <algorithm>
 using namespace std;
 
-void nextPermutation(vector<int> &nums)
-{
+void nextPermutation(vector<int> &nums) {
   // int n = nums.size();
   // int right = n - 1;
   // int left = 0;
@@ -31,22 +30,18 @@ void nextPermutation(vector<int> &nums)
   int dip = -1;
 
   // Step 1: Find the first decreasing element from the right (the "dip")
-  for (int i = n - 2; i >= 0; i--)
-  {
-    if (nums[i] < nums[i + 1])
-    {
+  for (int i = n - 2; i >= 0; i--) {
+    if (nums[i] < nums[i + 1]) {
       dip = i;
       break;
     }
   }
 
-  // Step 2: If a dip was found, find the smallest element to its right that is larger
-  if (dip >= 0)
-  {
-    for (int i = n - 1; i > dip; i--)
-    {
-      if (nums[i] > nums[dip])
-      {
+  // Step 2: If a dip was found, find the smallest element to its right that is
+  // larger
+  if (dip >= 0) {
+    for (int i = n - 1; i > dip; i--) {
+      if (nums[i] > nums[dip]) {
         swap(nums[dip], nums[i]);
         break;
       }

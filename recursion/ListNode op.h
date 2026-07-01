@@ -1,26 +1,22 @@
 #include <iostream>
 using namespace std;
 
-class ListNode
-{
+class ListNode {
 public:
   int val;
   ListNode *next;
 
-  ListNode()
-  {
+  ListNode() {
     this->val = 0;
     this->next = nullptr;
   }
 
-  ListNode(int n)
-  {
+  ListNode(int n) {
     this->val = n;
     this->next = nullptr;
   }
 
-  ListNode(int n, ListNode *next)
-  {
+  ListNode(int n, ListNode *next) {
     this->val = n;
     this->next = next;
   }
