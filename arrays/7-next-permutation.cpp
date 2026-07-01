@@ -52,3 +52,11 @@ void nextPermutation(vector<int> &nums) {
   // (If dip is -1, this conveniently reverses the whole array)
   reverse(nums.begin() + dip + 1, nums.end());
 }
+
+int main() {
+  vector<int> nums = {1, 3, 5, 4, 2};
+  nextPermutation(nums);
+  for (int num : nums) {
+    cout << num << " ";
+  }
+}
